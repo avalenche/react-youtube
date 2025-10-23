@@ -36,7 +36,7 @@ export const Video = () => {
           {messagesButton.map((elem) => {
             return (
               <button key={elem.id}>
-                <img src={elem.href} alt='icon' />
+                <img src={elem.href} alt='Icon' />
                 <span>{elem.title}</span>
               </button>
             )

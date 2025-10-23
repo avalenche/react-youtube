@@ -1,3 +1,4 @@
+import { InfoSection } from './InfoSection'
 import styles from "./Main.module.scss"
 import { Video } from './Video'
 export const Main = () => {
@@ -7,6 +8,7 @@ export const Main = () => {
       <section className={styles.videoInfo}>
         <p>text</p>
       </section>
+      <InfoSection />
     </main>
   )
 } 

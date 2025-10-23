@@ -1,0 +1,61 @@
+.infoSection {
+  padding: 38px 0 48px 0;
+  border-top: 1px solid rgba(216, 216, 216, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.videoAuthorIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.infoSectionTextContainer {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  max-width: 912px;
+}
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #19202c;
+  margin-bottom: 4px;
+}
+
+.publish {
+  margin-bottom: 14px;
+}
+.subscribed {
+  font-size: 12px;
+  display: none;
+}
+.infoText {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+.moreButton {
+  font-size: 20px;
+}
+.subscribeButton {
+  width: 154px;
+  height: 40px;
+  background-color: var(--background-color-red);
+  color: var(--text-color-white);
+  font-size: 16px;
+  // padding: 10px 20px;
+  border-radius: 20px;
+}
+.subscribeButton:hover {
+  background-color: #e60000;
+}
