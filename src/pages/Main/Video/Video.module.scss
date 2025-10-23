@@ -1,0 +1,51 @@
+.videoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.videoSectionInfo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #192646;
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #192646;
+    background-color: rgba(235, 235, 235, 0.3);
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      height: 14px;
+    }
+    &:last-child {
+      background-color: var(--text-color-white);
+      gap: 0;
+      padding: 17px 20px;
+      img {
+        height: 6px;
+      }
+    }
+    &:hover {
+      background-color: rgba(235, 235, 235, 0.6);
+    }
+  }
+}
