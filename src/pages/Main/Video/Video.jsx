@@ -13,7 +13,7 @@ const messagesButton = [
   },
   {
     id: 3,
-    title: "share",
+    title: "Share",
     href: "/icons/share-icon.svg",
   },
   {

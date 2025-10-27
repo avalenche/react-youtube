@@ -1,0 +1,14 @@
+.subscribeButton {
+  width: 154px;
+  height: 40px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  background-color: var(--background-color-red);
+  color: var(--text-color-white);
+  font-size: 16px;
+  // padding: 10px 20px;
+  border-radius: 20px;
+}
+.subscribeButton:hover {
+  background-color: #e60000;
+}
