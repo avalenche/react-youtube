@@ -1,7 +1,8 @@
 .videoSection {
+  padding-left: 5px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 .videoSectionInfo {
   display: flex;
@@ -12,10 +13,16 @@
     font-size: 36px;
     font-weight: 700;
     color: #192646;
-    margin-bottom: 14px;
+    margin-bottom: 21px;
+  }
+  .videoSectionInfoInteraction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   p {
     font-size: 20px;
+    padding-bottom: 7px;
   }
   .buttonContainer {
     display: flex;
@@ -25,6 +32,7 @@
   button {
     width: 100px;
     height: 40px;
+    flex-shrink: 0;
     // padding: 10px 20px;
     font-size: 16px;
     color: #192646;
@@ -52,9 +60,18 @@
     }
   }
 }
-@media screen and (max-width: 1440px) {
+@media (max-width: 1440px) {
   .videoSectionInfo {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media (max-width: 568px) {
+  .buttonContainer {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .buttonContainer button:last-child {
+    display: none;
   }
 }

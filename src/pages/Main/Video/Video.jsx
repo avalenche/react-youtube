@@ -25,7 +25,7 @@ const messagesButton = [
 export const Video = () => {
   return (
     <section className={styles.videoSection}>
-      <ReactPlayer src='https://www.youtube.com/watch?v=LXb3EKWsInQ' controls style={{ width: "100%", height: "auto", aspectRatio: "16/9" }} />
+      <ReactPlayer src='https://www.youtube.com/watch?v=LXb3EKWsInQ' controls style={{ width: "100%", height: "auto", aspectRatio: "1363/700", borderRadius: "14px", overflow: "hidden" }} />
       <div className={styles.videoSectionInfo}>
         <div>
           <h1 className={styles.title}>Dude You Re Getting A Telescope</h1>
@@ -42,7 +42,6 @@ export const Video = () => {
             )
           })}
         </div>
-
 
       </div>
 

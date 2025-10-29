@@ -8,17 +8,17 @@ export const VideoCard = () => {
           src="images/food-drink.png"
           alt="Video Thumbnail"
         />
-        <div className={styles.videoDuration}>4:15</div>
+        <div className={styles.videoDuration}>8:00</div>
       </div>
       <div className={styles.videoInfo}>
-        <h3 className={styles.videoTitle}>A Brief History Of Creation</h3>
+        <h3 className={styles.videoTitle}> Baby Monitor Technology</h3>
         <div className={styles.channelInfo}>
           <p className={styles.videoStats}>
-            80k views <span>&#8226;</span> 3 days ago
+            123k views
           </p>
           <p className={styles.author}>Dollie Blair</p>
         </div>
       </div>
-    </div>
+    </div >
   )
 }

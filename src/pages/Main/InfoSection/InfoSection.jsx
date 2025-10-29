@@ -1,6 +1,8 @@
+import { useIsSmallScreen } from '../../../hooks/useSmallScreen'
 import { Button } from '../../Components/Button'
 import styles from "./InfoSection.module.scss"
 export const InfoSection = () => {
+  const isSmall = useIsSmallScreen()
   return (
     <section className={styles.infoSection}>
 
@@ -11,7 +13,8 @@ export const InfoSection = () => {
             <h2 className={styles.title}>Food & Drink</h2>
             <p className={styles.publish}>Published on 14 Jun 2019</p>
           </div>
-          <Button style={"subscribeButton"}>Subscribe 2.3m</Button>
+          {isSmall ? <Button style={"subscribeButton"}>Subscribe</Button> : <Button style={"subscribeButton"}>Subscribe 2.3m</Button>}
+
         </div>
         <div className={styles.infoContent}>
           <p className={styles.subscribed}>Published on 14 Jun 2019</p>

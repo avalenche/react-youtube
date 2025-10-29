@@ -1,9 +1,8 @@
 .videoCard {
-  line-height: 1.3;
   display: flex;
   flex-direction: column;
 
-  gap: 10px;
+  gap: 17px;
 }
 .videoThumbnailContainer {
   aspect-ratio: 367/213;
@@ -22,9 +21,14 @@
   right: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  padding: 3px 9px;
+  width: 47px;
+  height: 24px;
   border-radius: 12px;
   font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .videoThumbnail {
@@ -35,14 +39,15 @@
 .videoInfo {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 17px;
 }
 .videoTitle {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--text-color-black);
 }
 .channelInfo {
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;

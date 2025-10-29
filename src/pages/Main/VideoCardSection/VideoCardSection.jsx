@@ -10,7 +10,7 @@ export const VideoCardSection = () => {
         <div className={styles.autoplayControl}>
           <span className={styles.autoplayLabel}>AUTOPLAY</span>
           <label className={styles.switch}>
-            <input type="checkbox" defaultChecked /> {/* defaultChecked makes it 'on' by default */}
+            <input type="checkbox" defaultChecked />
             <span className={styles.slider}></span>
           </label>
         </div>

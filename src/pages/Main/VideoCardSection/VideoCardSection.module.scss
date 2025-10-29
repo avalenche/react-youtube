@@ -7,12 +7,14 @@
 .videoCardContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 .titleContainer {
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  align-items: baseline;
+  margin-bottom: 26px;
 }
 
 .title {
@@ -87,66 +89,3 @@ input:checked + .slider::before {
     grid-row: 3;
   }
 }
-
-// @media screen and (max-width: 768px) {
-//   .header {
-//     padding: 10px 20px;
-//   }
-//   .headerLeftSection {
-//     gap: 15px;
-//     margin-right: 20px;
-//   }
-//   .headerCenterSection {
-//     margin-right: 20px;
-//   }
-//   .searchBar {
-//     max-width: 100%;
-//   }
-//   .headerRightSection {
-//     gap: 20px;
-//   }
-// }
-// @media screen and (max-width: 585px) {
-//   .header {
-//     padding: 10px 16px;
-//   }
-//   .headerCenterSection {
-//     margin-right: 12px;
-//     justify-content: flex-end;
-//   }
-//   .headerRightSectionButton:first-child,
-//   .headerRightSectionButton:nth-child(2) {
-//     display: none;
-//   }
-//   .headerCenterSection input {
-//     display: none;
-//   }
-//   .headerCenterSection .searchButton {
-//     margin-left: initial;
-//   }
-//   .headerLeftSection {
-//     margin-right: 12px;
-//     gap: 12px;
-//   }
-//   .headerRightSection {
-//     gap: 12px;
-//   }
-// }
-// @media screen and (max-width: 320px) {
-//   .headerLeftSection .headerBurgerMenuButton {
-//     display: none;
-//   }
-//   .headerLeftSection > .headerLeftSectionLogo.channelPage {
-//     display: none;
-//   }
-//   .headerRightSection.channelPage {
-//     display: none;
-//   }
-//   .headerRightSectionButton:not(:last-child) {
-//     display: none;
-//   }
-//   .headerLeftSectionSimpleLogoContainer,
-//   .smallBurger {
-//     display: flex;
-//   }
-// }
