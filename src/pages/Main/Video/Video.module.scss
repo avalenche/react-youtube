@@ -8,7 +8,6 @@
   display: grid;
   align-items: flex-end;
   justify-content: space-between;
-  // gap: 30px;
   gap: 8px;
 
   .videoSectionInfoContainer {
@@ -25,7 +24,6 @@
     font-size: 36px;
     font-weight: 700;
     color: #192646;
-    // margin-bottom: 21px;
   }
   .videoSectionInfoViews {
     grid-column: 1;
@@ -72,12 +70,7 @@
     }
   }
 }
-@media (max-width: 1440px) {
-  // .videoSectionInfo {
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-}
+
 @media (max-width: 568px) {
   .videoSection {
     margin-top: 10px;

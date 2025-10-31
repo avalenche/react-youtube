@@ -1,22 +1,24 @@
 import styles from "./VideoCard.module.scss"
-export const VideoCard = () => {
+export const VideoCard = ({ messages }) => {
+  const { src, duration, title, view, author } = messages
+
   return (
     <div className={styles.videoCard}>
       <div className={styles.videoThumbnailContainer}>
         <img
           className={styles.videoThumbnail}
-          src="images/food-drink.png"
+          src={src}
           alt="Video Thumbnail"
         />
-        <div className={styles.videoDuration}>8:00</div>
+        <div className={styles.videoDuration}>{duration}</div>
       </div>
       <div className={styles.videoInfo}>
-        <h3 className={styles.videoTitle}> Baby Monitor Technology</h3>
+        <h3 className={styles.videoTitle}>{title}</h3>
         <div className={styles.channelInfo}>
           <p className={styles.videoStats}>
-            123k views
+            {view}
           </p>
-          <p className={styles.author}>Dollie Blair</p>
+          <p className={styles.author}>{author}</p>
         </div>
       </div>
     </div >

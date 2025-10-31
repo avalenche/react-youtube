@@ -49,7 +49,7 @@ export const Video = () => {
         <div className={styles.videoSectionInfoContainer}>
           <h1 className={styles.title}>Dude You Re Getting <span>A Telescope</span></h1>
 
-          <button class={styles.buttonShowMore}>
+          <button className={styles.buttonShowMore}>
             <img src="/icons/down-arrow.svg" alt="Icon down" />
           </button>
         </div>
