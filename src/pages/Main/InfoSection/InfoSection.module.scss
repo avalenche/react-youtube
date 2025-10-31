@@ -37,6 +37,9 @@
   margin-top: 4px;
   margin-bottom: 9px;
 }
+.titleSubscribed {
+  display: none;
+}
 
 .publish {
   margin-bottom: 6px;
@@ -60,12 +63,20 @@
 
 @media screen and (max-width: 768px) {
   .infoSection {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     border-bottom: 1px solid rgba(216, 216, 216, 0.5);
   }
 }
 
 @media screen and (max-width: 568px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
   .infoSection {
     align-items: center;
     gap: 10px;
@@ -76,15 +87,24 @@
   }
   .infoSectionHeader {
     align-items: center;
+    > button {
+      margin-right: 4px;
+    }
   }
 
   .title {
     font-size: 16px;
+    margin: 0;
   }
 
   .publish {
+    display: none;
     font-size: 12px;
     margin-bottom: 0;
+  }
+  .titleSubscribed {
+    font-size: 12px;
+    display: block;
   }
 
   .infoContent {

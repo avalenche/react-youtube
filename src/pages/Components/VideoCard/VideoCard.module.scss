@@ -57,3 +57,21 @@
   vertical-align: middle;
   font-size: 5px;
 }
+
+@media (max-width: 568px) {
+  .videoCard {
+    gap: 10px;
+  }
+  .videoThumbnailContainer {
+    aspect-ratio: 48/25;
+  }
+  .videoInfo {
+    gap: 8px;
+  }
+  .videoTitle {
+    font-size: 16px;
+  }
+  .channelInfo {
+    font-size: 13px;
+  }
+}

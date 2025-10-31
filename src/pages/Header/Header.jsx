@@ -44,6 +44,9 @@ export const Header = () => {
           />
         </button>
       </div >
+      <button className={styles.headerSmallBurgerMenuButton}>
+        <img src="/icons/small-burger-menu-icon.svg" alt="Menu Icon" />
+      </button>
     </header >
   )
 }

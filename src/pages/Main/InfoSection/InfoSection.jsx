@@ -4,24 +4,29 @@ import styles from "./InfoSection.module.scss"
 export const InfoSection = () => {
   const isSmall = useIsSmallScreen()
   return (
-    <section className={styles.infoSection}>
+    <div className={styles.wrapper}>
+      <section className={styles.infoSection}>
 
-      <div className={styles.videoAuthorIcon}><img src="/images/food-drink.png" alt="Logo" /></div>
-      <div className={styles.rightColumn}>
-        <div className={styles.infoSectionHeader}>
-          <div>
-            <h2 className={styles.title}>Food & Drink</h2>
-            <p className={styles.publish}>Published on 14 Jun 2019</p>
+        <div className={styles.videoAuthorIcon}>
+          <img src="/images/food-drink.png" alt="Logo" />
+        </div>
+        <div className={styles.rightColumn}>
+          <div className={styles.infoSectionHeader}>
+            <div className={styles.titleContainer}>
+              <h2 className={styles.title}>Food & Drink</h2>
+              <p className={styles.publish}>Published on 14 Jun 2019</p>
+              <p className={styles.titleSubscribed}>245K subscribed</p>
+            </div>
+            {isSmall ? <Button style={"subscribeButton"}>Subscribe</Button> : <Button style={"subscribeButton"}>Subscribe 2.3m</Button>}
+
           </div>
-          {isSmall ? <Button style={"subscribeButton"}>Subscribe</Button> : <Button style={"subscribeButton"}>Subscribe 2.3m</Button>}
-
+          <div className={styles.infoContent}>
+            <p className={styles.subscribed}>Published on 14 Jun 2019</p>
+            <p className={styles.infoText}>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad. </p>
+            <button className={styles.moreButton}>Show more</button>
+          </div>
         </div>
-        <div className={styles.infoContent}>
-          <p className={styles.subscribed}>Published on 14 Jun 2019</p>
-          <p className={styles.infoText}>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad. </p>
-          <button className={styles.moreButton}>Show more</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }

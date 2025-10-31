@@ -82,10 +82,42 @@ input:checked + .slider::before {
   transform: translateX(16px);
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .videoCardSection {
     grid-column: initial;
     overflow-y: visible;
     grid-row: 3;
+  }
+  @media (max-width: 568px) {
+    .videoCardContainer {
+      gap: 31px;
+    }
+    .videoCardSection {
+      padding: 0 16px;
+    }
+    .titleContainer {
+      padding-top: 3px;
+      margin-bottom: 11px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .autoplayLabel {
+      font-size: 10px;
+      letter-spacing: 0.63px;
+    }
+    .switch {
+      width: 30px;
+      height: 19px;
+    }
+    .slider::before {
+      // left: -1px;
+      bottom: 1px;
+      height: 16.36px;
+      width: 16.36px;
+    }
+    input:checked + .slider::before {
+      transform: translateX(10px);
+    }
   }
 }

@@ -1,11 +1,12 @@
 import styles from "./Footer.module.scss"
+const json = {}
 export const Footer = () => {
   return (
-    <footer className={styles.sidebar}>
+    <footer className={styles.footer}>
       <nav className={styles.mainNavigation}>
         <ul className={styles.mainNavigationListPrimary}>
           <li>
-            <a className={styles.mainNavigationHome} href="#"
+            <a href="#"
             ><img
                 className={styles.iconNavigation}
                 src="icons/home-icon.svg"

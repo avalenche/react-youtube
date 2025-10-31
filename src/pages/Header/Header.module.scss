@@ -24,6 +24,14 @@
   height: 17px;
   vertical-align: middle;
 }
+.headerSmallBurgerMenuButton {
+  padding: 0 4px;
+}
+
+.headerSmallBurgerMenuButton img {
+  height: 19px;
+}
+
 .smallBurger {
   display: none;
 }
@@ -116,19 +124,23 @@
   width: 40px;
   border-radius: 50%;
 }
-@media screen and (max-width: 1100px) {
+.headerSmallBurgerMenuButton {
+  display: none;
+}
+@media (max-width: 1100px) {
   .header {
     padding: 20px 30px 20px 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .header {
     padding: 10px 20px;
   }
   .headerLeftSection {
     gap: 15px;
     margin-right: 20px;
+    // padding-bottom: 1px;
   }
   .headerCenterSection {
     margin-right: 20px;
@@ -140,9 +152,10 @@
     gap: 20px;
   }
 }
-@media screen and (max-width: 585px) {
+@media (max-width: 568px) {
   .header {
-    padding: 10px 16px;
+    height: 50px;
+    padding: 0px 16px 1px;
   }
   .headerCenterSection {
     margin-right: 12px;
@@ -157,6 +170,7 @@
   }
   .headerCenterSection .searchButton {
     margin-left: initial;
+    padding: 4px;
   }
   .headerLeftSection {
     margin-right: 12px;
@@ -166,21 +180,27 @@
     gap: 12px;
   }
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .headerLeftSection .headerBurgerMenuButton {
     display: none;
   }
   .headerLeftSection > .headerLeftSectionLogo.channelPage {
     display: none;
   }
+  .headerCenterSection {
+    margin-right: 37px;
+  }
   .headerRightSection.channelPage {
     display: none;
   }
-  .headerRightSectionButton:not(:last-child) {
+  .headerRightSectionButton {
     display: none;
   }
   .headerLeftSectionSimpleLogoContainer,
   .smallBurger {
     display: flex;
+  }
+  .headerSmallBurgerMenuButton {
+    display: block;
   }
 }

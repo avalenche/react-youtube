@@ -1,5 +1,4 @@
-/* Sidebar */
-.sidebar {
+.footer {
   display: none;
   background-color: var(--background-color-white);
   position: fixed;
@@ -24,14 +23,13 @@
   .mainNavigationListPrimary {
     display: flex;
     justify-content: space-around;
-    // margin: 0;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #f1f1f1;
 
     a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 5px;
+      gap: 7px;
       padding: 10px;
       white-space: nowrap;
 
@@ -49,16 +47,8 @@
   border-radius: 8px;
 }
 
-.mainNavigation .mainNavigation-home {
-  color: var(--text-color-red);
-}
-
-// --------------
-
-@media screen and (max-width: 768px) {
-  .sidebar {
+@media (max-width: 768px) {
+  .footer {
     display: block;
   }
-}
-@media screen and (max-width: 585px) {
 }
