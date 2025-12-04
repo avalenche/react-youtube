@@ -1,4 +1,3 @@
-import ReactPlayer from "react-player"
 import { useIsSmallScreen } from "../../../hooks/useSmallScreen"
 import styles from "./Video.module.scss"
 const messagesButton = [
@@ -32,19 +31,21 @@ export const Video = () => {
     height: "auto",
     aspectRatio: 16 / 9,
     borderRadius: 0,
-    overflow: "hidden"
+    overflow: "hidden",
+    objectFit: "cover"
   }
   const largeSize = {
     width: "100%",
     height: "auto",
     aspectRatio: 1363 / 700,
     borderRadius: "14px",
-    overflow: "hidden"
+    overflow: "hidden",
+    objectFit: "cover"
   }
   const stylePlayer = isSmall ? smallSize : largeSize
   return (
     <section className={styles.videoSection}>
-      <ReactPlayer src='https://www.youtube.com/watch?v=LXb3EKWsInQ' controls style={stylePlayer} />
+      <img style={stylePlayer} src='./images/youtube-video.png' alt='youtube-video' />
       <div className={styles.videoSectionInfo}>
         <div className={styles.videoSectionInfoContainer}>
           <h1 className={styles.title}>Dude You Re Getting <span>A Telescope</span></h1>
